@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Python Mudah</title>
+        <link rel="stylesheet" href="styling.css">
+        <link rel="icon" href="pythonImg1.png" type="image/icon type">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #ced4da">
+        <nav class="nav nav-pills flex-column flex-sm-row bg1">
+            <!-- tombol sidebar-->
+            <div class="align-content-between text-light ml">
+                <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list text-light" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+            </div>
+            <a class="flex-sm-fill text-sm-center nav-link text-light " aria-current="page" href="#">Python Mudah</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingLatihan.html">Latihan</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingEvaluasi.html">Evaluasi</a>
+            <a id="userlink" style="margin-right: 15px; " class="flex-sm-fill text-sm-center nav-link text-light" href="#"></a>
+            <button id="new" style=" margin-right: 15px" class="flex-sm-fill text-sm-center nav-link text-light" onclick="Signout()">Log Out</button>
+        </nav>
+        <!-- side bar -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <!-- header sidebar -->
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Pilihan Materi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- body sidebar -->
+            <div class="offcanvas-body">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- Materi 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Pendahuluan
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <table class="table table-striped">
+                            <tbody><tr>
+                                  <td>
+                                      <a href="sejarah.html" id="link"> <!-- sub materi 1 -->
+                                          &ensp;&ensp;Sejarah
+                                      </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                      <a href="pengenalanSyntax.html" id="link"> <!-- sub materi 1 -->
+                                          &ensp;&ensp;Pengenalan Syntax
+                                      </a>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                      </div>
+                    </div>
+                    <!-- Materi 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Percabangan
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <table class="table table-striped">
+                            <tbody><tr>
+                                  <td>
+                                      <a href="pengertianPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                          &ensp;&ensp;Pengertian
+                                      </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                      <a href="jenisPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                          &ensp;&ensp;Jenis-Jenis
+                                      </a>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                      </div>
+                    </div>
+                    <!-- Materi 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Perulangan
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <table class="table table-striped">
+                                <tbody><tr>
+                                      <td>
+                                          <a href="pengertianPerulangan.html" id="link"> <!-- sub materi 3 -->
+                                              &ensp;&ensp;Pengertian
+                                          </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                          <a href="jenisPerulangan.html" id="link"> <!-- sub materi 3 -->
+                                              &ensp;&ensp;Jenis-Jenis
+                                          </a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                        </div>
+                      </div>
+                      <!-- Materi 4 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Fungsi
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <table class="table table-striped">
+                                <tbody><tr>
+                                      <td>
+                                          <a href="pengertianFungsi.html" id="link"> <!-- sub materi 4 -->
+                                              &ensp;&ensp;Pengertian
+                                          </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                          <a href="penerapanFungsi.html" id="link"> <!-- sub materi 4 -->
+                                              &ensp;&ensp;Cara Menggunakan
+                                          </a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                        </div>
+                    </div>
+                    <!-- Materi 5 -->
+                      <div class="accordion-item"> <!-- Tag buka accordion item -->
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            List
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <!-- Tag buka isi accordion -->
+                            <table class="table table-striped">
+                                <tbody><tr>
+                                      <td>
+                                          <a href="pengertianList.html" id="link"> <!-- sub materi 4 -->
+                                              &ensp;&ensp;Pengertian
+                                          </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                          <a href="aksesList.html" id="link"> <!-- sub materi 4 -->
+                                              &ensp;&ensp;Cara Penggunaan List
+                                          </a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                        </div> <!-- Tag tutup isi accordion -->
+                      </div> <!-- Tag tutup accordion item -->
+                </div>
+            </div> <!-- Tag tutup off canvas body accordion -->
+        </div><!-- Tag tutup off canvas accordion -->        
+        <!-- grid pertama -->
+        <div class="container mt-4">
+            <h1 class="text1">Jenis-Jenis</h1>
+            <div class="row mt-3">
+                <div class="col-xl-12">
+                    <!-- text box 1 -->
+                    <div class="card">
+                        <h5 class="card-header">Kondisi If</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">If pada Python</h5>
+                            <p class="card-text text-justify">
+                                Pengambilan keputusan (kondisi if) digunakan untuk mengantisipasi kondisi yang terjadi 
+                                saat jalanya program dan menentukan tindakan apa yang akan diambil sesuai dengan kondisi.
+                            </p><br>
+                            <p class="card-text text-justify">
+                                Pada python ada beberapa statement/kondisi diantaranya adalah if, else dan elif Kondisi 
+                                if digunakan untuk mengeksekusi kode jika kondisi bernilai benar True. Jika kondisi bernilai salah 
+                                False maka statement/kondisi if tidak akan di-eksekusi. Berikut ini adalah contoh penggunaan If :
+                            </p><br>
+                            <img src="if.png" class="rounded mx-auto d-block mt-2 mb-2" alt="If">
+                            <p class="card-text text-justify">
+                                Dari contoh diatas, jika program dijalankan maka akan mencetak string "Sembilan Lebih Besar Dari 
+                                Angka Tujuh" sebanyak 1 kali yaitu pada if pertama. Di if kedua statement bernilai salah, jadi 
+                                perintah print("Sembilan Lebih Besar Dari Angka Sepuluh") tidak akan dieksekusi.
+                            </p><br>
+                        </div>
+                    </div>
+                    <!-- text box 2 -->
+                    <div class="card mt-3">
+                        <h5 class="card-header">Kondisi If Else</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">If Else pada Python</h5>
+                            <p class="card-text text-justify">
+                                Pengambilan keputusan (kondisi if else) tidak hanya digunakan untuk menentukan tindakan apa yang akan 
+                                diambil sesuai dengan kondisi, tetapi juga digunakan untuk menentukan tindakan apa yang akan diambil/dijalankan 
+                                jika kondisi tidak sesuai.
+                            </p><br>
+                            <p class="card-text text-justify">
+                                Pada python ada beberapa statement/kondisi diantaranya adalah if, else dan elif Kondisi if digunakan untuk 
+                                mengeksekusi kode jika kondisi bernilai benar.
+                            </p><br>
+                            <p class="card-text text-justify">
+                                Kondisi if else adalah kondisi dimana jika pernyataan benar True maka kode dalam if akan dieksekusi, 
+                                tetapi jika bernilai salah False maka akan mengeksekusi kode di dalam else. Berikut ini adalah contoh penggunaan If Else :
+                            </p><br>
+                            <img src="else.png" class="rounded mx-auto d-block mt-2 mb-2" alt="If Else">
+                            <p class="card-text text-justify">
+                                Pada contoh diatas, jika program dijalankan maka akan mencetak string "Maaf Anda Tidak Lulus" karena pernyataan pada if bernilai False
+                            </p><br>
+                        </div>
+                    </div>
+                    <!-- text box 3 -->
+                    <div class="card mt-3">
+                        <h5 class="card-header">Kondisi If Elif Else</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">If Elif Else pada Python</h5>
+                            <p class="card-text text-justify">
+                                Pengambilan keputusan (kondisi if elif) merupakan lanjutan/percabangan logika dari "kondisi if". 
+                                Dengan elif kita bisa membuat kode program yang akan menyeleksi beberapa kemungkinan yang bisa terjadi. 
+                                Hampir sama dengan kondisi "else", bedanya kondisi "elif" bisa banyak dan tidak hanya satu. Berikut ini adalah contoh penggunaan If Elif Else :
+                            </p><br>
+                            <img src="elif.png" class="rounded mx-auto d-block mt-2 mb-2" alt="If Elif Else">
+                            <p class="card-text text-justify">
+                                Pada contoh diatas, jika program dijalankan maka akan mencetak string "Saya akan libur".
+                            </p><br>
+                        </div>
+                    </div>
+                    <!-- text box 4 -->
+                    <div class="card mt-3">
+                        <h5 class="card-header">Nested If</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">If Bersarang pada Python</h5>
+                            <p class="card-text text-justify">
+                                IF bersarang atau dalam bahasa Pythonnya Nested IF merupakan kondisi yang didalamnya terdapat 
+                                kondisi lagi. Contohnya,  keputusan kita setelah SMA ada dua pilihan yaitu kuliah atau kerja. 
+                                Jika kita memilih kuliah, ada pilihan lagi di dalamnya, yaitu daftar di kampus mana dan seterusnya. 
+                                Hal tersebut bisa kita bahasakan dengan IF dalam IF. Berikut ini adalah contoh penggunaan Nested If :
+                            </p><br>
+                            <img src="ifsar.png" class="rounded mx-auto d-block mt-2 mb-2" alt="Nested If">
+                            <button class="btn btn-primary mt-3 d-grid gap-4 col-3 mx-auto" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Coba Program</button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header ">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Python Mudah</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <iframe src="https://trinket.io/embed/python/0582aea810" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- tag div penutup grid 1 -->
+                </div>
+            </div>
+        <!-- tombol untuk ke page materi sebelumnya -->
+        <a class="btn btn-primary mt-3" role="button" href="pengertianPercabangan.html">Pengertian Percabangan</a>
+        <script>
+            //tampilan nama user atau pengguna
+            var pengguna = sessionStorage.getItem("fullname");
+            var namaPengguna = document.getElementById("userlink");
+            namaPengguna.innerText = pengguna;
+            function Signout(){
+              sessionStorage.removeItem('username');
+              sessionStorage.removeItem('fullname');
+              sessionStorage.removeItem('password');
+              sessionStorage.removeItem('class');
+              sessionStorage.removeItem('nim');
+              sessionStorage.removeItem('evaluasi');
+              sessionStorage.removeItem('latihan');
+              window.location="halamanLogin.html"
+            }
+          </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>

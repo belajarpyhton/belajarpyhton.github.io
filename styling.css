@@ -1,0 +1,144 @@
+.bg1 {
+  background-color: #4a4e69;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #ced4da;
+}
+.text1 {
+  color: black;
+  font-size: xx-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#link {
+  text-decoration: none;
+  color: black;
+}
+.ml {
+  margin-left: 15px;
+}
+.bg2 {
+  background-image: url(BG1.jpg);
+}
+
+.tengah {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.kotak {
+  background-color: rgba(255, 255, 255, 0.263);
+  border-radius: 5px;
+}
+.text2 {
+  margin-left: 15px;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.text3 {
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 29px;
+}
+.text4 {
+  margin-left: 25px;
+  font-weight: 700;
+}
+h3 {
+  margin-left: 25px;
+}
+.inputan {
+  width: 550px;
+  height: 35px;
+  margin-left: 25px;
+}
+.radioBox {
+  height: 15px;
+  width: 15px;
+  margin-left: 25px;
+}
+label {
+  font-size: 20px;
+}
+.gradasi {
+  background: rgb(90, 24, 154);
+  background: linear-gradient(
+    90deg,
+    rgba(90, 24, 154, 1) 0%,
+    rgba(60, 9, 108, 1) 0%,
+    rgba(157, 78, 221, 1) 100%
+  );
+}
+.textOption {
+  color: red;
+}
+.ml3 {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.Judul {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.bg-python {
+  background-image: url("bglogin.jpeg"); /* Ganti dengan path gambar yang sesuai */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.text2 {
+  color: white; /* atau warna yang kontras dengan latar belakang */
+}
+.text3 {
+  color: black; /* atau warna yang kontras dengan latar belakang */
+}
+.kotak.tengah {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Warna hitam transparan (rubah alpha sesuai kebutuhan) */
+}
+/* Gaya untuk tombol dengan gradasi biru */
+.btn.gradasi {
+  background-image: linear-gradient(to bottom, #609cdd, #092a4d);
+  border: none;
+  color: white;
+}
+
+.btn.gradasi:hover {
+  background-image: linear-gradient(to bottom, #092a4d, #609cdd);
+  color: white;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-warning:hover {
+  background-color: #d39e00;
+  border-color: #d39e00;
+}
+.custom-height {
+  min-height: 735px; 
+}
+.ukuranFoto{
+  height: 200px;
+  width: 150px;
+}

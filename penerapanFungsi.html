@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Python Mudah</title>
+        <link rel="stylesheet" href="styling.css">
+        <link rel="icon" href="pythonImg1.png" type="image/icon type">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #ced4da">
+        <nav class="nav nav-pills flex-column flex-sm-row bg1">
+            <!-- tombol sidebar-->
+            <div class="align-content-between text-light ml">
+                <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list text-light" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </button>
+            </div>
+            <a class="flex-sm-fill text-sm-center nav-link text-light " aria-current="page" href="#">Python Mudah</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingLatihan.html">Latihan</a>
+            <a class="flex-sm-fill text-sm-center nav-link text-light" href="landingEvaluasi.html">Evaluasi</a>
+            <a id="userlink" style="margin-right: 15px; " class="flex-sm-fill text-sm-center nav-link text-light" href="#"></a>
+            <button id="new" style=" margin-right: 15px" class="flex-sm-fill text-sm-center nav-link text-light" onclick="Signout()">Log Out</button>
+        </nav>
+        <!-- side bar -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <!-- header sidebar -->
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Pilihan Materi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- body sidebar -->
+            <div class="offcanvas-body">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- Materi 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Pendahuluan
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <table class="table table-striped">
+                            <tbody><tr>
+                                  <td>
+                                      <a href="sejarah.html" id="link"> <!-- sub materi 1 -->
+                                          &ensp;&ensp;Sejarah
+                                      </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                      <a href="pengenalanSyntax.html" id="link"> <!-- sub materi 1 -->
+                                          &ensp;&ensp;Pengenalan Syntax
+                                      </a>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                      </div>
+                    </div>
+                    <!-- Materi 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Percabangan
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <table class="table table-striped">
+                            <tbody><tr>
+                                  <td>
+                                      <a href="pengertianPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                          &ensp;&ensp;Pengertian
+                                      </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                      <a href="jenisPercabangan.html" id="link"> <!-- sub materi 2 -->
+                                          &ensp;&ensp;Jenis-Jenis
+                                      </a>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                      </div>
+                    </div>
+                    <!-- Materi 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Perulangan
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <table class="table table-striped">
+                                <tbody><tr>
+                                      <td>
+                                          <a href="pengertianPerulangan.html" id="link"> <!-- sub materi 3 -->
+                                              &ensp;&ensp;Pengertian
+                                          </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                          <a href="jenisPerulangan.html" id="link"> <!-- sub materi 3 -->
+                                              &ensp;&ensp;Jenis-Jenis
+                                          </a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                        </div>
+                      </div>
+                      <!-- Materi 4 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Fungsi
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <table class="table table-striped">
+                                <tbody><tr>
+                                      <td>
+                                          <a href="pengertianFungsi.html" id="link"> <!-- sub materi 4 -->
+                                              &ensp;&ensp;Pengertian
+                                          </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                          <a href="penerapanFungsi.html" id="link"> <!-- sub materi 4 -->
+                                              &ensp;&ensp;Cara Menggunakan
+                                          </a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                        </div>
+                    </div>
+                    <!-- Materi 5 -->
+                      <div class="accordion-item"> <!-- Tag buka accordion item -->
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            List
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"> <!-- Tag buka isi accordion -->
+                            <table class="table table-striped">
+                                <tbody><tr>
+                                      <td>
+                                          <a href="pengertianList.html" id="link"> <!-- sub materi 4 -->
+                                              &ensp;&ensp;Pengertian
+                                          </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                          <a href="aksesList.html" id="link"> <!-- sub materi 4 -->
+                                              &ensp;&ensp;Cara Penggunaan List
+                                          </a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                        </div> <!-- Tag tutup isi accordion -->
+                      </div> <!-- Tag tutup accordion item -->
+                </div>
+            </div> <!-- Tag tutup off canvas body accordion -->
+        </div><!-- Tag tutup off canvas accordion -->      
+        <!-- grid pertama -->
+        <div class="container mt-4">
+            <h1 class="text1">Penerapan Fungsi</h1>
+            <div class="row mt-3">
+                <div class="col-xl-12">
+                    <!-- text box 1 -->
+                    <div class="card">
+                        <h5 class="card-header">Penerapan dari Fungsi Rekurensif</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Fungsi Rekurensif</h5>
+                            <p class="card-text text-justify">
+                                Fungsi rekursif adalah fungsi yang dapat memanggil dirinya sendiri secara berulang-ulang hingga 
+                                suatu kondisi yang di definisikan terpenuhi atau bernilai benar (true). Sebelum kita belajar 
+                                fungsi rekursif di python, sebaiknya kalian mengenal dulu apa itu fungsi dan bagaimana penggunaannya 
+                                di python.
+                            </p><br>
+                            <p class="card-text text-justify">
+                                Fungsi rekrusif juga bisa disebut perulangan rekursif (karena fungsinya memang sama seperti looping) 
+                                perbedaannya adalah jika pada perulangan iteratif menggunakan instruksi perulangan seperti for dan while,
+                                sementara pada fungsi rekursif perulangan di lakukan pada fungsi itu sendiri. Berikut ini merupakan tiga 
+                                contoh penerapan dari fungsi rekursif yaitu :
+
+                                <ol class=" list-group-numbered">
+                                    <li class="list-group-item">Faktorial</li>
+                                    <li class="list-group-item">Fungsi Pangkat</li>
+                                    <li class="list-group-item">Fibonacci</li>
+                                </ol>
+                            </p><br>
+                        </div>
+                    </div>
+                    <!-- text box 2 -->
+                    <div class="card mt-3">
+                        <h5 class="card-header">Faktorial</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Menghitung Bilangan Faktorial Dengan Fungsi Rekursif di Python</h5>
+                            <p class="card-text text-justify">
+                                Fungsi faktorial() merupakan fungsi rekursif karena di dalam fungsi tersebut terdapat pemanggilan 
+                                fungsi-nya sendiri. Ketika pengguna memasukan bilangan bil maka nilai tersebut akan di kirim ke 
+                                fungsi faktorial() lewat parameter a. Selama nilai a tidak sama dengan 1 fungsi faktorial() akan 
+                                terus melakukan pemanggilan dirinya sendiri. Perulangan akan berhenti ketika nilai adalah 1.
+                            </p><br>
+                            <p class="card-text text-justify">
+                                Berikut ini adalah contoh penerapan bilangan faktorial dengan fungsi rekursif :
+                            </p><br>
+                            <img src="faktorial.png" class="rounded mx-auto d-block mt-2 mb-2" alt="Faktorial">
+                        </div>
+                    </div>
+                    <!-- text box 3 -->
+                    <div class="card mt-3">
+                        <h5 class="card-header">Fungsi Pangkat</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Fungsi Rekursif untuk Menghitung Bilangan Berpangkat</h5>
+                            <p class="card-text text-justify">
+                                Fungsi pangkat() di atas berfungsi untuk menghitung bilangan x yang di pangkatkan y. Dalam fungsi 
+                                tersebut terdapat pemanggilan dirinya sendiri. Untuk setiap nilai x dan y yang di masukan pengguna 
+                                akan dikirim ke fungsi pangkat() melalui parameter variabel x dan y. Selama nilai y bukan 0 maka 
+                                fungsi pangkat() akan terus memangil dirinya sendiri, dan nilai y akan terus di kurangi 1 (y-1) sampai 
+                                kondisi bisa terpenuhi dan perulangan dihentikan.
+                            </p><br>
+                            <p class="card-text text-justify">
+                                Berikut ini adalah contoh penerapan menghitung bilangan berpangkat dengan fungsi rekursif :
+                            </p><br>
+                            <img src="pangkat.png" class="rounded mx-auto d-block mt-2 mb-2" alt="Fungsi Pangkat">
+                        </div>
+                    </div>
+                    <!-- text box 4 -->
+                    <div class="card mt-3">
+                        <h5 class="card-header">Fibonacci</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Menentukan Bilangan Fibonacci dengan Fungsi Rekursif</h5>
+                            <p class="card-text text-justify">
+                                Contoh yang ketiga kita membuat fungsi fibonacci() yang juga merupakan penerapan dari fungsi rekursif. Bilangan fibonacci 
+                                adalah bilangan yang memiliki suku awal 0 atau 1 dan suku-suku berikutnya merupakan penjumlahan dari dua suku sebelumnya.
+                            </p><br>
+                            <p class="card-text text-justify">
+                                Pengguna memasukan batas deret bilangan fibonacci yang nilainya di tampung pada variabel x. Untuk menampilkan deret kita 
+                                perlu menggunakan perulangan for. yang akan mencetak setiap nilai yang di proses dalam fungsi fibonacci().
+                            </p><br>
+                            <img src="fibonacci.png" class="rounded mx-auto d-block mt-2 mb-2" alt="fibonacci">
+                            <button class="btn btn-primary mt-3 d-grid gap-4 col-3 mx-auto" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Coba Program</button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header ">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Python Mudah</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <iframe src="https://trinket.io/embed/python/0582aea810" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- tag div penutup grid 1 -->
+                </div>
+            </div>
+        <!-- tombol untuk ke page materi sebelumnya -->
+        <a class="btn btn-primary mt-3" role="button" href="pengertianFungsi.html">Pengertian Fungsi</a>
+        <script>
+            //tampilan nama user atau pengguna
+            var pengguna = sessionStorage.getItem("fullname");
+            var namaPengguna = document.getElementById("userlink");
+            namaPengguna.innerText = pengguna;
+            function Signout(){
+              sessionStorage.removeItem('username');
+              sessionStorage.removeItem('fullname');
+              sessionStorage.removeItem('password');
+              sessionStorage.removeItem('class');
+              sessionStorage.removeItem('nim');
+              sessionStorage.removeItem('evaluasi');
+              sessionStorage.removeItem('latihan');
+              window.location="halamanLogin.html"
+            }
+          </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>
